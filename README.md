@@ -11,17 +11,17 @@
 
 ---
 ## Rust智能合约开发环境搭建
-```
-接入雄安链应用系统应先具有Rust智能合约安装环境，具体安装步骤如下所示：
-1 按照官方安装go环境，本教程推荐使用1.14.4版本。安装好后，在命令行输入go version验证版本
 
+接入雄安链应用系统应先具有Rust智能合约安装环境，具体安装步骤如下所示：
+
+1 按照官方安装go环境，本教程推荐使用1.14.4版本。安装好后，在命令行输入go version验证版本
 如上图所示， golang1.14.4版本运行环境已经安装成功
 
 2 装rustup，rustup是rust的安装和管理工具，在本项目中rustup用来维护依赖和处理cargo、rustc的版本更新，安装脚本：
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup default stable
-刷新环境变量：source $HOME/.cargo/env
-cargo version
+* curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+* rustup default stable
+* 刷新环境变量：source $HOME/.cargo/env
+* cargo version获取cargo版本
 如上图所示，cargo的版本为
 如果版本低于1.44.1，用下面命令更新：
 rustup update stable
@@ -35,7 +35,7 @@ rustup target add wasm32-unknown-unknown
 * 安装Intellij IDEA，可以根据自己的需要选择商业版或免费版。
 * 安装开发智能合约需要的两个插件rust和toml。安装方式：Perferences.. -> Plugins 在Marketplact中直接搜索Rust和toml并安装即可
 * 合约开发请参考Demo来完成。 
-```
+
 ## 通过xccli接入区块链网络环境
 ```
 1 将xccli文件所在目录加入path环境变量
