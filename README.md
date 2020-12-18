@@ -21,20 +21,20 @@
 * curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 * rustup default stable
 * 刷新环境变量：source $HOME/.cargo/env
-* cargo version获取cargo版本
-如上图所示，cargo的版本为
-如果版本低于1.44.1，用下面命令更新：
-rustup update stable
-此命令将会更新本地的rustup版本。
-rust安装成功后，通过下面命令，确认安装了wasm32 target
-rustup target list --installed
-如果显示并没有安装wasm32的话，执行以下命令：
-rustup target add wasm32-unknown-unknown
-再次执行rustup target list --installed，可以看到已经安装成功/ 
-3 选择开发智能合约的ide，使用vscode安装rust插件或idea安装intellij-rust和intellij-toml以便更好的开发智能合约。 intellij-rust是Rust语言插件，intellij-toml是为Toml语言的插件。.本教程使用Intellij IDEA为例：
-* 安装Intellij IDEA，可以根据自己的需要选择商业版或免费版。
-* 安装开发智能合约需要的两个插件rust和toml。安装方式：Perferences.. -> Plugins 在Marketplact中直接搜索Rust和toml并安装即可
-* 合约开发请参考Demo来完成。 
+* cargo version获取cargo版本   
+* 如上图所示，cargo的版本为    
+* 如果版本低于1.44.1，用下面命令更新：        
+rustup update stable  此命令将会更新本地的rustup版本。  
+* rust安装成功后，通过下面命令，确认安装了wasm32 target     
+>>>>>>rustup target list --installed   
+
+* 如果显示并没有安装wasm32的话，执行以下命令：        
+  rustup target add wasm32-unknown-unknown
+*再次执行rustup target list --installed，可以看到已经安装成功/ 
+* 选择开发智能合约的ide，使用vscode安装rust插件或idea安装intellij-rust和intellij-toml以便更好的开发智能合约。 intellij-rust是Rust语言插件，intellij-toml是为Toml语言的插件。.本教程使用Intellij IDEA为例：
+安装Intellij IDEA，可以根据自己的需要选择商业版或免费版。    
+    安装开发智能合约需要的两个插件rust和toml。安装方式：Perferences.. -> Plugins 在Marketplact中直接搜索Rust和toml并安装即可    
+    合约开发请参考Demo来完成。   
 
 ## 通过xccli接入区块链网络环境
 ```
